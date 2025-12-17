@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELKOM AKSES</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            background: url('13 Thn Telkom.png') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(7, 248, 248);
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.35);
+            z-index: -1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            background: rgba(224, 104, 104, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255,0,0,0.6);
+        }
+
+        .panel {
+            display: none;
+            width: 85%;
+            margin: 40px auto;
+            padding: 25px;
+            background: rgba(0,0,0,0.6);
+            border-radius: 20px;
+        }
+
+        .card-btn {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 12px 18px;
+            border-radius: 12px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .card-btn:hover {
+            background: rgba(255,0,0,0.4);
+        }
+
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .photos img {
+            width: 180px;
+            border-radius: 15px;
+            border: 2px solid rgba(255,255,255,0.4);
+            transition: 0.4s;
+        }
+
+        .photos img:hover {
+            transform: scale(1.15);
+            box-shadow: 0 15px 40px rgba(255,0,0,0.6);
+            color: rgb(7, 248, 248);
+        }
+    </style>
+</head>
+<body>
+
+<audio id="bgMusic" src="mp3 JAYALAH_TELKOM_INDONESIA_2025_MARS_TELKOM_GROUP.mp3"></audio>
+
+<nav>
+    <a onclick="showPanel('home')">Home</a>
+    <a onclick="showPanel('about')">Profil</a>
+    <a onclick="showPanel('human')">The most beautiful moment</a>
+    <a onclick="showPanel('contact')">Contact</a>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="panel">
+    <img src="Telkom Akses.png"
+     width="160"
+     style="opacity:0.7;"
+     alt="Telkom Akses">
+    <h1></h1>
+    <p style="margin-top:15px; padding:10px 18px; display:inline-block; background:linear-gradient(135deg,#ef2f21,#27ae60); color:#ffffff; font-weight:bold; border-radius:12px; box-shadow:0 6px 15px rgba(0,0,0,0.4); letter-spacing:0.5px;">
+        Selamat Datang Di Website Kami
+</div>
+
+<!-- PROFIL -->
+<div id="about" class="panel">
+     <img src="Telkom Akses.png">
+    <p style="margin-top:15px; padding:10px 18px; display:inline-block; background:linear-gradient(135deg,#ef2f21,#27ae60); color:#ffffff; font-weight:bold; border-radius:12px; box-shadow:0 6px 15px rgba(0,0,0,0.4); letter-spacing:0.5px;">
+Telkom Akses adalah anak perusahaan PT Telkom Indonesia (Persero) Tbk yang berfokus pada pengelolaan
+dan pengembangan jaringan akses telekomunikasi di seluruh Indonesia. Kami memastikan jutaan pelanggan
+terhubung dengan layanan digital seperti internet, telepon, dan televisi berlangganan melalui infrastruktur
+jaringan yang handal dan efisien.
+
+Telkom Akses Didirikan Sejak Tahun 2012 untuk memperkuat kualitas layanan Telkom Group, Telkom Akses kini memasuki
+babak baru.
+Sejak tahun 2024,kami mulai memperluas cakupan layanan ke pasar eksternal di luar TelkomGroup, menjawab
+kebutuhan infrastruktur digital yang semakin luas dan kompleks, sesuai dengan subsidiary direction yang tertuang
+dalam dokumen Corporate Strategic Scenario (CSS) Telkom 2024–2027.
+
+Sejalan dengan arah transformasi tersebut, Telkom Akses hadir dengan visi baru: menjadi mitra strategis pilihan di industri telekomunikasi Indonesia untuk mendorong kemajuan masyarakat digital. Dengan semangat ini, kami berkomitmen untuk tumbuh sebagai perusahaan managed service yang dominan dan terpercaya secara nasional.
+Portofolio Layanan
+Sebagai perusahaan penyedia infrastruktur dan layanan teknis terdepan, Telkom Akses memiliki empat portofolio utama yang menopang operasional bisnis dan ekspansi strategis kami di industri telekomunikasi Indonesia, yaitu:
+
+Construction
+Provisioning
+Managed Service 
+Solution
+
+   </p>
+</div>
+
+<!-- HUMAN -->
+<div id="human" class="panel">
+    <h2>Human Capital</h2>
+
+     <div class="card-btn" onclick="toggleSub('profilHC')">Do'a</div>
+    <div id="profilHC" style="display:none;text-align:center;">
+        <img src="TA Serang.png" width="160">
+        <p>MENGUCAPKAN</p>
+        <p>Selamat Ulang Tahun untuk telkom akses yang ke 13</p>
+        <p>Selamat Ulang Tahun Juga untuk GM TA Tangerang Banten Bapak (SIGIT PRAMONO)</p>
+        <p>Panjang Umur Sehat Slalu, sukses terus, dan slalu di mudahkan dalam segala urusan,tercapai dalam segala hajatnya</p>
+        <p>Dan untuk Telkom Akses juga semakin jaya, semakin sukses, semoga slalu terus mensejahterakan semua karyawan-karyawannya</p>
+        <p>Amin Ya Rabbal'allamin</p>
+        <p>Istajibu Du'ana Ya ALLAH</p>
+        <p>اللهم صل على سيدنا محمد وعلى آل سيدنا محمد</p>
+        <p>اللَّهُمَّ إِنِّي أَسْأَلُكَ رِضَاكَ وَالْجَنَّةَ وَأَعُوذُ بِكَ مِنْ سَخَطِكَ وَالنَّارِ</p>
+        <p> اللَّهُمَّ افْتَحْ لَنَا أَبْوَابَ الخَيْرِ وَأَبْوَابَ البَرَكَةِ وَأَبْوَابَ النِّعْمَةِ وَأَبْوَابَ الرِّزْقِ وَأَبْوَابَ القُوَّةِ وَأَبْوَابَ الصِّحَّةِ وَأَبْوَابَ السَّلَامَةِ</p>
+        <p>وَأَبْوَابَ العَافِيَةِ وَأَبْوَابَ الجَنَّةِ اللَّهُمَّ عَافِنَا مِنْ كُلِّ بَلَاءِ الدُّنْيَا وَعَذَابِ الآخِرَةِ وَاصْرِفْ عَنَّا بِحَقِّ القُرْآنِ العَظِيْمِ وَنَبِيِّكَ الكَرِيْمِ</p>
+        <p>شَرَّ الدُّنْيَا وَعَذَابَ الآخِرَةِ،غَفَرَ اللهُ لَنَا وَلَهُمْ بِرَحْمَتِكَ يَا أَرْحَمَ</p>
+        <p>Suatu kebanggan yang sangat luar biasa bagi kami bisa menjadi bagian dari Telkom Akses ini,bisa di beri kesempatan
+        untuk berkarir dan mencari rezeki disini, ini adalah suatu kehormatan yang sangat mengesankan untuk kami semua</p>
+        <p><b>TERIMA KASIH TELKOM AKSES</b></p>
+        <p>Telkom Akses Solid, Speed, Smart</p>
+    </div>
+
+
+    <div class="card-btn" onclick="toggleSub('evidenKerja')">Moment</div>
+
+<div id="evidenKerja" style="display:none;">
+    <p class="photos">
+
+        <video controls>
+            <source src="Pak Sigit GM.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="Product Dan Layanan.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="Tim MTC Gamas.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="video Perawatan Infrastruktur.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="Gladi Telkom Serang.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="Sto Aceh Tamiang.mp4" type="video/mp4">
+        </video>
+<p style="margin-top:15px; padding:10px 18px; display:inline-block; background:linear-gradient(135deg,#ef2f21,#27ae60); color:#ffffff; font-weight:bold; border-radius:12px; box-shadow:0 6px 15px rgba(0,0,0,0.4); letter-spacing:0.5px;">
+    Ya Allah inilah Atasan Terbaik Kami yaitu Pak SIGIT PRAMONO, sehatkan selalu ya Allah beliau,
+    mudahkan semua segala urusan nya, dan di limpahkan slalu rezekinya</p>
+    dapat di berikan kesehatan dan keselamatan, kesabaran dalam menghadapi semua ujian ujian nya,
+    semoga segera di pulihkan dengan keadaan nya yang sekarang menipanya</p>
+    <p>Amin Ya Rabbal"Allamin</p>
+</div>
+ <div class="card-btn" onclick="toggleSub('action')">Action</div>
+    <div id="action" style="display:none; text-align:center;">
+        <div class="photos">
+             <img src="Apel Peringatan Hut k 13.jpg">
+             <img src="Moment Action 2.jpg">
+             <img src="Action Momemnt.jpg">
+             <img src="Apel Sto Tgr hut ke 13.jpg">
+             <img src="TA Peduli Bencana Sumut.jpg">
+            <img src="Action 1.png">
+            <img src="Action 2.jpg">
+            <img src="Action 3.jpg">
+            <img src="photo multiskil.jpg">
+            <img src="photo podcast TA.jpg">
+            
+        </div>
+        <div style="margin-top:15px; padding:10px 18px; display:inline-block; background:linear-gradient(135deg,#2ecc71,#27ae60); color:#ffffff; font-weight:bold; border-radius:12px; box-shadow:0 6px 15px rgba(0,0,0,0.4); letter-spacing:0.5px;">
+            The most beautiful moment
+        </div>
+    </div>
+</div>
+
+<style>
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.photos video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+</style>
+
+<!-- CONTACT -->
+<div id="contact" class="panel">
+    <h2>Contact</h2>
+    <p>
+        🏡 <a href="https://www.google.com/search?q=alamat+telkom+ciruas&oq=alamat+telkom+ciruas&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgoIARAAGIAEGKIEMgoIAhAAGIAEGKIEMgoIAxAAGIAEGKIEMgoIBBAAGIAEGKIEMgoIBRAAGIAEGKIE0gEINDIzOWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+             target="_blank" style="color:cyan;">
+             Jl. Raya Ciptayasa Ciruas No.222, Citerep, Kec. Ciruas, Kabupaten Serang, Banten 42182</a>
+
+    <p>
+🏡 <a href="https://www.google.com/search?q=telkom%20jakarta%20slipi&sca_esv=7a0616c681a8c1ce&sxsrf=AE3TifMyViiSMjKdmczivmemQRVXsY5Y3g%3A1765872183985&ei=NxJBaYbtO8uP4-EPg6LiyAM&uact=5&oq=alamat+telkom+jakarta+selipi&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGFsYW1hdCB0ZWxrb20gamFrYXJ0YSBzZWxpcGkyBxAhGKABGAoyBxAhGKABGAoyBxAhGKABGApIqEBQ1wVYqTxwA3gBkAEAmAGfAqABuiOqAQcwLjEwLjEyuAEDyAEA-AEBmAIVoALLHcICChAAGLADGNYEGEfCAgQQIxgnwgIIEAAYgAQYogTCAgUQABiABMICCBAAGIAEGMsBwgIGEAAYFhgewgIKECMYgAQYJxiKBcICBxAAGIAEGA3CAggQABgIGA0YHsICAhAmwgIFECEYoAGYAwCIBgGQBgiSBwUzLjkuOaAH5ooBsgcFMC45Ljm4B6QdwgcGMi0xNi41yAeMAYAIAA&sclient=gws-wiz-serp&dlnr=1&ved=2ahUKEwizztmt08GRAxX4UGwGHemxIkQQl6ENegQIDxAL&lqi=ChR0ZWxrb20gamFrYXJ0YSBzbGlwaSIDiAEBSNC-vvGzsICACFoiEAAQARACGAAYARgCIhR0ZWxrb20gamFrYXJ0YSBzbGlwaZIBEGNvcnBvcmF0ZV9vZmZpY2U#rlimm=16567413216684994189
+             target="_blank style="color:cyan;">
+             1, RT.1/RW.7, Tomang, Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11440</a>
+    </p>
+
+</div>
+
+<script>
+    let activePanel = null;
+    let musicPlaying = false;
+    const music = document.getElementById("bgMusic");
+
+    function showPanel(panelID) {
+        const panel = document.getElementById(panelID);
+
+        if (panelID === "home") {
+            if (!musicPlaying) {
+                music.play().catch(()=>{});
+                music.loop = true;
+                musicPlaying = true;
+            } else {
+                music.pause();
+                music.currentTime = 0;
+                musicPlaying = false;
+            }
+        }
+
+        if (activePanel === panelID) {
+            panel.style.display = "none";
+            activePanel = null;
+            return;
+        }
+
+        document.querySelectorAll('.panel').forEach(p => p.style.display="none");
+        panel.style.display = "block";
+        activePanel = panelID;
+    }
+
+    function toggleSub(id){
+        const el = document.getElementById(id);
+        el.style.display = el.style.display==="none"?"block":"none";
+    }
+</script>
+
+</body>
+</html>
